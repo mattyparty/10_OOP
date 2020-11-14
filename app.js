@@ -10,6 +10,34 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+///matt code
+
+const teamMembers = [];
+const emptyId = [];
+const employeeQuestions = [
+  {
+    type: "input",
+    name: "managerName",
+    message: "What's the Manager's Name?",
+  },
+  {
+    type: "input",
+    name: "managerId",
+    message: "What's the Manager's ID?",
+  },
+  {
+    type: "input",
+    name: "managerEmail",
+    message: "What's the Manager's Email?",
+  },
+  {
+    type: "input",
+    name: "officeNumber",
+    message: "What's the Manager's Office Number?",
+  },
+];
+
+////
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
@@ -32,4 +60,52 @@ const render = require("./lib/htmlRenderer");
 // and Intern classes should all extend from a class named Employee; see the directions
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
-// for the provided `render` function to work! ```
+// for the provided `render` function to work! ``
+
+//manager function
+function manager() {
+  console.log("Lets Build the Team!");
+  inquirer.prompt(employeeQuestions).then(function (data) {
+    const manager = new Manager(
+      data.managerName,
+      data.managerId,
+      data.managerEmail,
+      data.officeNumber
+    );
+    teamMembers.push(manager);
+    emptyId.push(data.managerId);
+    //call team function once manager info is entered
+    team();
+  });
+}
+//engineer funtion
+function engineer(){
+    //engineer function here
+}
+function team() {
+  //build team here
+  inquirer
+    .prompt([
+      {
+        type: "list",
+        name: "teamMemberChoice",
+        message: "What Team Member Type would you like to Add?",
+        choices: ["Engineer", "Intern", "No more Team Members to Add"],
+      },
+    ])
+    .then(function (data) {
+      if (data.teamMemberChoice === "Engineer") {
+        engineer();
+      } else if (data.teamMemberChoice === "Intern") {
+        intern();
+      } else outputTeam();
+    });
+}
+
+// function to initialize program
+function init() {
+  manager();
+}
+
+// function call to initialize program
+init();
