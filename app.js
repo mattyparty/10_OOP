@@ -157,7 +157,7 @@ function outputTeam() {
     fs.mkdirSync(OUTPUT_DIR);
   }
   fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
-  console.log(teamMembers);
+  //console.log(teamMembers);
 }
 
 // function to initialize program
