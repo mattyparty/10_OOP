@@ -20,7 +20,8 @@ Utizing Node.js with the inquirer module. I created a html Team generator. Also 
 
 ## GitHub Directory link
 
-[ReadMe Repo](https://github.com/mattyparty/10_OOP)
+[Repo Location](https://github.com/mattyparty/10_OOP)
+
 [Demo Video](https://github.com/mattyparty//blob/main/Assets/10OOP%20walkthrough.mp4)
 
 # Installation
@@ -49,7 +50,7 @@ npm test
 
 Passed Test Image
 
-![alt text](http://url/to/img.png)
+![alt text](https://raw.githubusercontent.com/mattyparty/10_OOP/main/Assets/Passed%20Tests.png)
 
 # Questions
 
