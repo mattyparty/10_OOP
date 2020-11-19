@@ -1,8 +1,8 @@
-# Project Name: ReadMe Generator
+# Project Name: Team Generator
 
 # Project Description
 
-Utizing Node.js with the inquirer module. I created a readme generator. In fact I am using that right now to generate that read me.
+Utizing Node.js with the inquirer module. I created a html Team generator. Also used the testing files included to ensure the code was working properly.
 
 # Table of Contents
 
@@ -20,8 +20,8 @@ Utizing Node.js with the inquirer module. I created a readme generator. In fact 
 
 ## GitHub Directory link
 
-[ReadMe Repo](https://github.com/mattyparty/09_NodeJs)
-[Demo Video](https://github.com/mattyparty/09_NodeJs/blob/main/assets/ReadMeGenerator.mp4)
+[ReadMe Repo](https://github.com/mattyparty/10_OOP)
+[Demo Video](https://github.com/mattyparty//blob/main/Assets/10OOP%20walkthrough.mp4)
 
 # Installation
 
@@ -46,6 +46,10 @@ I dont quite understand this aspect of developing so I will leave this blank.
 # Tests
 
 npm test
+
+Passed Test Image
+
+![alt text](http://url/to/img.png)
 
 # Questions
 
